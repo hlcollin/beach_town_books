@@ -128,26 +128,63 @@ li a {
 
 
 .nav li {
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 178px;
-    height: 36px;
+    
+    
 	list-style-type: none;
-	background-image: url(images/border.svg);
-    background-repeat: no-repeat;
+	
 	text-align: left;
 	margin-bottom: 5px;
-    justify-content: space-between;
 }
 
-.nav a {
+.nav a:link {
+    
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    width: 178px;
+    height: 36px;
+    background-image: url(images/border.svg);
+    background-repeat: no-repeat;
+}
+
+.nav a:visited {
+    
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    width: 178px;
+    height: 36px;
+    background-image: url(images/border.svg);
+    background-repeat: no-repeat;
+}
+
+.nav li:hover {
     
     font-family: grad, serif;
     font-style: normal;
     font-weight: 700;
+    display: block;
+    width: 178px;
+    height: 36px;
+    background-image: url(images/border_hover.svg);
+    background-repeat: no-repeat;
 }
 
-.nav li:hover {
+.nav li:active {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    width: 178px;
+    height: 36px;
     background-image: url(images/border_hover.svg);
     background-repeat: no-repeat;
 }
