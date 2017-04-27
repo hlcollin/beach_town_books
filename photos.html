@@ -13,49 +13,67 @@
         <script src="https://use.typekit.net/hnn3mtt.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         
-        <!--jquery link-->
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <!--<script>$(function() { alert('hello') });</script>-->
-        
-        <script>
+<!--<script>$(function() { alert('hello') });</script>-->
+
+<script>
 		
 		$(document).ready(function() {
+		
+		
+		
+		$(".image-container_prev").mouseover(function () {
+		$(this).attr('src', 'images/previous2.png');
+		}).mouseout(function () {
+		$(this).attr('src', 'images/previous.png');
+		});
+		
+		$(".image-container_next").mouseover(function () {
+		$(this).attr('src', 'images/next2.png');
+		}).mouseout(function () {
+		$(this).attr('src', 'images/next.png');
+		});
 		 
        
-        $('#jquery-carousel .next a').on("click", function(e) {
+        $('.jquery-carousel .next a').on("click", function(e) {
             e.preventDefault();
 			
-            var currentSlide = $('#jquery-carousel li.active');
-            var nextSlide = $('#jquery-carousel li.active').next(); 
+			var thisCarouselId = '#' + $(this).parent().parent().prop('id');
+			var selector = thisCarouselId + ' li.active';
+			//alert(selector);
+            var currentSlide = $(thisCarouselId + ' li.active');
+            var nextSlide = $(thisCarouselId + ' li.active').next(); 
            
             currentSlide.removeClass('active');
            
             if (nextSlide.length === 0 ) {
-              nextSlide = $('#jquery-carousel li').first();
+              nextSlide = $(thisCarouselId + ' li').first();
             }
             nextSlide.addClass('active');
         });
         
-        $('#jquery-carousel .prev a').on("click", function(e) {
+        $('.jquery-carousel .prev a').on("click", function(e) {
             e.preventDefault();
-            var currentSlide = $('#jquery-carousel li.active');
-            var prevSlide = $('#jquery-carousel li.active').prev();
+			
+			var thisCarouselId = '#' + $(this).parent().parent().prop('id');
+            var currentSlide = $(thisCarouselId + ' li.active');
+            var prevSlide = $(thisCarouselId + ' li.active').prev();
             
             currentSlide.removeClass('active');
             
             if (prevSlide.length === 0 ) {
-              prevSlide = $('#jquery-carousel li').last();
+              prevSlide = $(thisCarouselId + ' li').last();
             }
             prevSlide.addClass('active');
         });
 		moveSlide();
-     });
+		
+	 });
 	 /*function moveSlide(){
 		$(".next a").click();
 		setTimeout(moveSlide, 3000);
 		}*/
 	   </script>
-
         
        
         
