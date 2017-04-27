@@ -1,0 +1,431 @@
+
+* {
+    font-family: "grad", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+header {
+    width: 1320px;
+    height: 30px;
+    background-color: #000000;
+    z-index: 9;
+    float: left;
+    display: flex;
+    
+
+}
+
+
+body {
+    background-color: black;
+    width: 1300px;
+    height: 1040px;
+    margin: auto;
+    
+    /*background-image: url(images/jungle.svg);
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+
+#wrapper {
+    z-index: 3;
+    position: absolute;
+    width: 1300px;
+    height: 750px;
+    justify-content: space-between;
+    
+    margin: auto;
+}
+
+
+.background { 
+    z-index: 1;
+    width: 1308px;
+    position: absolute;
+    margin-top: -100px;
+            }
+
+.background_pp { 
+    z-index: 1;
+    width: 1308px;
+    height: 1080px;
+    position: absolute;
+    margin-top: -40px;
+            }
+
+.btb_text {
+    width: 180px;
+    height: 40px;
+}
+
+footer {
+    float: left;
+    display: flex;
+    width: 1309px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    height: 100px;
+    align-items: center;
+    background-color: #000;
+    bottom: 0;
+    
+   
+    
+}
+
+footer h1, footer p {
+    color: white;
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.tk-grad {
+    
+}
+
+h1 {
+    
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+.bold {
+    
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.italic {
+    
+    font-family: grad, serif;
+font-style: italic;
+font-weight: 400;
+}
+
+li a {
+    text-decoration: none;
+    color: black;  
+}
+
+.nav { 
+    
+    height: 300px;
+    width: 200px;
+    float: left;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+
+.nav li {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 178px;
+    height: 36px;
+	list-style-type: none;
+	background-image: url(images/border.svg);
+    background-repeat: no-repeat;
+	text-align: left;
+	margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.nav a {
+    
+    font-family: grad, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.nav li:hover {
+    background-image: url(images/border_hover.svg);
+    background-repeat: no-repeat;
+}
+    
+
+.story_info p a  {
+    text-decoration: none;
+    color: #AAA999;
+}
+
+.btb_text {
+    margin-top: 10px;
+    width: 260px;
+    height: 75px;
+}
+
+
+#chair {
+    width: 343px;
+    margin-left: 468px;
+    margin-top: 291px;
+    margin-bottom: -670px;
+    
+}
+
+.story_info {
+        width: 265px;
+        height: 265px;
+        padding: 10px;
+        background-image: url(images/border_story.svg);
+        background-repeat: no-repeat;
+        background-size: 285px 285px;
+        margin-top: 50px;
+        margin-right: 50px;
+        float: right;
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden; 
+    }
+
+
+
+.hover_object {
+    margin-top: 100px;
+    width: 600px;
+    height: 330px;
+    clear: both;
+    float: right;
+    background-image: url(images/tiger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.hover_object_m {
+    margin-top: -22px;
+    margin-right: -9px;
+    width: 380px;
+    height: 600px;
+    clear: both;
+    float: right;
+    background-image: url(images/martian.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:  contain;
+    
+}
+
+.hover_object_pp {
+    margin-top: 30px;
+    margin-right: -138px;
+    width: 500px;
+    height: 585px;
+    clear: both;
+    float: right;
+    background-image: url(images/table.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+.hover_object_o {
+    margin-top: 67px;
+    margin-right: -7px;
+    width: 600px;
+    height: 490px;
+    clear: both;
+    float: right;
+    background-image: url(images/mermaid.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+}
+
+.hover_object_s {
+    margin-top: 67px;
+    margin-right: -9px;
+    width: 600px;
+    height: 490px;
+    clear: both;
+    float: right;
+    background-image: url(images/books.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+}
+
+
+
+    .clearfix:before, .clearfix:after{
+        content: " "; /* 1 */ display: table; /* 2 */
+
+}
+
+    .clearfix:after {
+        clear: both;
+}
+
+/** * For IE 6/7 only * Include this rule to trigger hasLayout and contain floats. */
+
+.clearfix { *zoom: 1; }
+
+
+
+/*makes box and white tiger appear when hover on green tiger*/
+
+#hidden {
+    float: right;
+    width: 500px;
+    height: 800px;
+}
+
+#hidden:hover .story_info {
+    visibility: visible;
+    
+}
+
+#hidden:hover .hover_object {
+    background-image: url(images/tiger_white.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
+#hidden:hover .hover_object_m {
+    margin-top: -22px;
+    margin-right: -9px;
+    width: 380px;
+    height: 600px;
+    clear: both;
+    float: right;
+    background-image: url(images/martian_white.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:  contain;
+}
+
+#hidden:hover .hover_object_pp {
+     margin-top: 30px;
+    margin-right: -138px;
+    width: 500px;
+    height: 585px;
+    clear: both;
+    float: right;
+    background-image: url(images/table_white.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+}
+
+#hidden:hover .hover_object_o {
+    margin-top: 67px;
+    margin-right: -7px;
+    width: 600px;
+    height: 490px;
+    clear: both;
+    float: right;
+    background-image: url(images/mermaid_white.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+}
+
+#hidden:hover .hover_object_s {
+    margin-top: 67px;
+    margin-right: -7px;
+    width: 600px;
+    height: 490px;
+    clear: both;
+    float: right;
+    background-image: url(images/books_white.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+}
+
+
+.find_story {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 178px;
+    height: 36px;
+	list-style-type: none;
+	background-image: url(images/border.svg);
+    background-repeat: no-repeat;
+	text-align: left;
+    margin-left: 555px;
+	bottom: 140px;
+    position: fixed; 
+}
+
+.find_story p {
+    font-size: 1.1em;
+}
+
+.find_story:hover {
+    background-image: url(images/border_hover.svg);
+    background-repeat: no-repeat;
+}
+
+.circle_icons {
+    display: block;
+    width: 160px;
+    height: 27px;
+	list-style-type: none;
+	text-align: left;
+    margin-left: 575px;
+	bottom: 110px;
+    position: fixed; 
+}
+
+.circle_icons a {
+   text-decoration: none;
+}
+
+.circle_icons a:hover .stroke{
+   fill: #FFFFFF; 
+}
+.circle {
+    width: 25px;   
+}
+
+
+
+.blue .fill{
+    fill: #5EC6CB;
+}
+
+.yellow .fill {
+    fill: #F1F1D4;
+}
+
+.red .fill {
+    fill: #E05E61;
+}
+
+.purple .fill {
+    fill: #48489D;
+}
+
+.white .fill {
+    fill: #FFFFFF;
+}
+
+.stroke:hover {
+    fill: #FFFFFF;
+}
+
+.social_media {
+    font-size: 2em;
+}
+
+

@@ -1,0 +1,370 @@
+
+* {
+    font-family: "grad", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+.background_interior {
+    z-index: 1;
+    height: 960px;
+    position: fixed;
+    margin-top: 30px;
+}
+
+.return {
+    width: 70px;
+    padding-top: 10px;
+}
+
+.return:hover {
+    border-bottom: 5px solid #AAA999;
+    
+}
+
+.title {
+    float: right;
+    background-image: url(images/interior_border.svg);
+    background-repeat: no-repeat;    
+    width: 600px;
+    height: 140px;
+    margin-right: 240px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+    
+}
+    
+
+.btb_text_title {
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 313px;
+    height: 55px;
+}
+            
+#wrapper {
+    background-color: white;
+    /*background-image: url(images/gray_books.svg);
+    background-repeat: no-repeat;*/
+    overflow: hidden;
+    min-height: 990px;
+    height: auto;
+    
+            }
+.content {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: right;
+    margin-right: 240px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 4;
+   
+}
+
+.books_content {
+    display: flex;
+    width: 600px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float: right;
+    margin-right: 240px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 4; 
+}
+
+
+article {
+    height: 270px;
+    width: 270px;
+    margin: 10px;
+    line-height: 1.4em;
+}
+
+.interior_link a {
+    color: #77766D;
+    text-decoration: none;
+}
+
+.interior_link a:hover {
+    color: #E15E62;
+}
+
+
+
+
+
+.in_pictures {
+    margin: 10px;
+}
+
+.get_involved {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 178px;
+    height: 40px;
+	list-style-type: none;
+	background-image: url(images/border.svg);
+    background-repeat: no-repeat;
+	text-align: center;
+	margin-bottom: 5px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.get_involved:hover {
+    background-image: url(images/border_hover.svg);
+    background-repeat: no-repeat;
+}
+
+button {
+    border: none;
+    background-color: none;
+    color: black;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+}
+
+.contact p {
+    line-height: 1.7em;
+}
+
+#small_mermaid {
+    width: 178px;
+    position: absolute;
+    top: 505px;
+    left: 950px;
+    z-index: 10;
+    display: none;
+}
+
+/*These are the settings controlling the appearance of the text box for comments*/
+.content textarea {
+        width: 555px;
+        height: 99px;
+        background-image: url(images/interior_border.svg);
+        background-repeat: no-repeat;
+		box-shadow: 5px 5px 5px #888;
+        padding: 20px;
+        margin: 20px 20px 0px 0px;
+        font-size: 1em;
+        color: #F1B9B2;
+        border: none;
+    }
+
+.content textarea:focus {
+    color: black;
+}
+
+
+.bookcover {
+    height: 140px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.bookcover:hover {
+    /*animate*/
+}
+
+.heading {
+    
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    background-image: url(images/books_header_border.svg);
+    background-repeat: no-repeat;
+}
+#popular_books td:nth-of-type(even) {
+    width: 400px;
+    padding: 20px;
+    vertical-align: top;
+}
+
+li {
+    margin: 0px;
+}
+
+#genres {
+    display: flex;
+    flex-direction: column;
+    justfiy-content: space-around;
+    width: 600px;
+}
+
+#genre_list {
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#contact_info {
+    
+    border-spacing: 10px;
+}
+
+#contact_info td{
+    vertical-align: top;
+    
+}
+
+#books_h1 {
+    color: #47479D;
+}
+
+#photos_h1 {
+    color: #5EC6CB;
+}
+
+
+#events_h1 {
+    color: #E15E62;
+}
+
+
+#buyback_h1 {
+    color: #47479D;
+}
+
+
+#contact_h1 {
+    color: #F1B9B2;
+}
+
+/*Photo Carousel*/
+
+#jquery-carousel {
+        position: absolute;
+		margin-left:auto;
+		margin-right:auto;
+        width: 600px;
+        height: 600px;
+    margin-left: 10px;
+    }
+	
+    #jquery-carousel ul {
+        padding: 0;
+        margin: 0;
+		height: 700px;
+        list-style: none;
+		overflow: hidden;
+		width: 600px;
+		position: absolute;
+		
+    }
+	
+    #jquery-carousel li {
+        
+		display: none;
+    }
+   
+    #jquery-carousel li.active {
+		padding: 0;
+		margin-left: auto;
+		text-align: center;
+		display: block;
+       
+		
+    }
+
+    #jquery-carousel .prev,
+    #jquery-carousel .next {
+        
+        z-index: 200;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 300px;
+        font-weight: bold;
+    }
+
+#jquery-carousel .next {
+    right: -45px;
+}
+
+#jquery-carousel .prev {
+    left: -40px;
+}
+
+
+#jquery-carousel .prev a,
+#jquery-carousel .next a {
+       text-decoration: none;
+        display: block;  
+    }
+	
+	
+#jquery-carousel .prev a{
+        background-image: url(images/prev.svg);
+        background-repeat: no-repeat;
+        left: -10px;
+        width: 60px;
+        height: 60px;
+        
+    }
+#jquery-carousel .next a{
+        width: 60px;
+        height: 60px;
+        background-image: url(images/next.svg);
+        background-repeat: no-repeat;
+        
+    }
+
+#jquery-carousel .next a:hover {
+       background-image: url(images/next_hover.svg);
+        background-repeat: no-repeat;
+    }
+    
+#jquery-carousel .prev a:hover {
+    background-image: url(images/prev_hover.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.caption {
+    font-family: grad, serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #77766D;
+    width: 610px;
+    height: 43px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 1.4em;
+    text-align: center;
+    padding: 20px;
+    background-image: url(images/border_caption.svg);
+    background-repeat: no-repeat;
+    
+}
+
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Beach Town Books</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="interior.css">
+
+    
+        <script src="https://use.fontawesome.com/bfbc311732.js"></script>
+        
+        <script src="https://use.typekit.net/hnn3mtt.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+        <!--jquery link-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <!--<script>$(function() { alert('hello') });</script>-->
+        
+        <script>
+		
+		$(document).ready(function() {
+		 
+       
+        $('#jquery-carousel .next a').on("click", function(e) {
+            e.preventDefault();
+			
+            var currentSlide = $('#jquery-carousel li.active');
+            var nextSlide = $('#jquery-carousel li.active').next(); 
+           
+            currentSlide.removeClass('active');
+           
+            if (nextSlide.length === 0 ) {
+              nextSlide = $('#jquery-carousel li').first();
+            }
+            nextSlide.addClass('active');
+        });
+        
+        $('#jquery-carousel .prev a').on("click", function(e) {
+            e.preventDefault();
+            var currentSlide = $('#jquery-carousel li.active');
+            var prevSlide = $('#jquery-carousel li.active').prev();
+            
+            currentSlide.removeClass('active');
+            
+            if (prevSlide.length === 0 ) {
+              prevSlide = $('#jquery-carousel li').last();
+            }
+            prevSlide.addClass('active');
+        });
+		moveSlide();
+     });
+	 /*function moveSlide(){
+		$(".next a").click();
+		setTimeout(moveSlide, 3000);
+		}*/
+	   </script>
+
+        
+       
+        
+    </head>
+    
+    <body>
+        <div id="wrapper" class="clearfix">
+            
+            <img class="background_interior animated slideInRight" src="images/gray_books.svg" alt="books">
+            
+        <header>TEXT
+        </header>
+        
+                <ul class="nav">
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="buyback.html">BUYBACK</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                     <a href="index.html"><img class="return" src="images/chair.svg"></a>
+                </ul>
+            
+            
+        <div class="title">
+            <img class="btb_text_title" src="images/BTB_Text3.svg" alt="Beach Town Books">
+            <h1 id="photos_h1">PHOTOS</h1>
+            
+        </div>
+            
+        <div class="content">
+                <h3 class="bold">Our Store:</h3>
+               
+           <div id="jquery-carousel">
+		<div class="prev"><a href=""></a></div>
+	<ul>
+		<li ><a href="images/item-1.jpg"><img 
+		src ="images/store/item-1.jpg"></a><br>
+            <p class="caption">Where does a book lover begin?</p>
+        </li>
+		<li><a href="images/item-2.jpg"><img 
+		src ="images/store/item-2.jpg"></a><br>
+            <p class="caption">Rediscover literary treasures</p>
+        </li>
+		<li><a href="images/item-3.jpg"><img 
+		src ="images/store/item-3.jpg"></a><br>
+            <p class="caption">Help yourself to some complimentary coffee and read in a relaxing space</p></li>
+		<li><a href="images/item-4.jpg"><img 
+		src ="images/store/item-4.jpg"></a><br>
+            <p class="caption">Enjoy a place to relax and read</p></li>
+		<li><a href="images/item-5.jpg"><img 
+		src ="images/store/item-5.jpg"></a><br>
+            <p class="caption">Comfy seating!</p></li>
+		<li><a href="images/item-6.jpg"><img 
+        src ="images/store/item-6.jpg"></a><br>
+            <p class="caption">Books and relaxation&mdash;a book lovers sanctuary</p></li>
+		<li><a href="images/item-7.jpg"><img 
+		src ="images/store/item-7.jpg"></a><br>
+            <p class="caption">Antique books from the ship/nautical section.</p></li>
+		<li><a href="images/item-8.jpg"><img 
+		src ="images/store/item-8.jpg"></a><br>
+            <p class="caption">Sunshine &#43; Peaceful Shopping &#61; A Good Day</p></li>
+        <li><a href="images/item-9.jpg"><img 
+		src ="images/store/item-9.jpg"></a><br>
+            <p class="caption">A book may be aged but inspiration is timeless.</p></li>
+        <li><a href="images/item-10.jpg"><img 
+		src ="images/store/item-10.jpg"></a><br>
+            <p class="caption">From old and treasured books to new bestsellers, we have it all</p></li>
+        <li><a href="images/item-11.jpg"><img 
+		src ="images/store/item-11.jpg"></a><br>
+            <p class="caption">Read an antique book and step back in time</p></li>
+        <li><a href="images/item-12.jpg"><img 
+		src ="images/store/item-12.jpg"></a><br>
+            <p class="caption">Pick up a gift certificate for your favorite reading buddy!</p></li>
+        <li class="active" ><a href="images/item-13.jpg"><img 
+		src ="images/store/item-13.jpg"></a><br>
+            <p class="caption">Find your new reading nook</p></li>
+        <li><a href="images/item-14.jpg"><img 
+		src ="images/store/item-14.jpg"></a><br>
+            <p class="caption">The owner, Debbie, loves her bookstore and invites you to love it too</p></li>
+        <li><a href="images/item-15.jpg"><img 
+		src ="images/store/item-15.jpg"></a><br>
+            <p class="caption">Our staff cares about the store and helping you find what you need</p></li>
+        <li><a href="images/item-16.jpg"><img 
+		src ="images/store/item-16.jpg"></a><br>
+            <p class="caption">Check in the alley to see if the stores parking space is available</p></li>
+        <li><a href="images/item-17.jpg"><img 
+		src ="images/store/item-17.jpg"></a><br>
+            <p class="caption">Browse and discover</p></li>
+        <li><a href="images/item-18.jpg"><img 
+		src ="images/store/item-18.jpg"></a><br>
+            <p class="caption">We're tucked away but once you find us, you'll be glad you did!</p></li>
+        <li><a href="images/item-19.jpg"><img 
+		src ="images/store/item-19.jpg"></a><br>
+            <p class="caption">Our new name! Perfect for our special beach town community</p></li>
+        <li><a href="images/item-20.jpg"><img 
+		src ="images/store/item-20.jpg"></a><br>
+            <p class="caption">A peek inside</p></li>
+        <li><a href="images/item-21.jpg"><img 
+		src ="images/store/item-21.jpg"></a><br>
+            <p class="caption">Buy your books and walk to the beach</p></li>
+        <li><a href="images/item-22.jpg"><img 
+		src ="images/store/item-22.jpg"></a><br>
+            <p class="caption">See what our customers like to read</p></li>
+        
+		
+	</ul>
+	<div class="next"><a href=""></a></div>
+	</div>
+    
+            
+            
+            
+        </div>
+            
+            
+        </div>
+        
+        <footer class="clearfix">
+                <img class="btb_text" src="images/BTB_Text2.svg">
+                <p>949.492.1114 &#124; 99 AVENIDA SERRA SAN CLEMENTE CALIFORNIA 92672</p>
+            </footer>
+        
+    </body>
+</html>
